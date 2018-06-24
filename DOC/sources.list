@@ -1,0 +1,9 @@
+go to 
+https://docs.kali.org/general-use/kali-linux-sources-list-repositories
+
+copy text
+paste in /etc/apt
+
+if not working 
+command
+apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6

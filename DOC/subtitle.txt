@@ -1,0 +1,4 @@
+Add subtitle file to video file
+
+mkvmerge -o output.mkv video.mp4 subtitles.srt
+

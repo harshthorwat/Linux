@@ -1,0 +1,4 @@
+extract libre office
+go to DBES directory
+type following command
+sudo dpkg -i *.deb

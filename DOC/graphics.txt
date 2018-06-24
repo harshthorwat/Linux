@@ -1,0 +1,13 @@
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt update
+sudo apt -y upgrade
+
+
+DRI3 will increase graphical performance with the AMDGPU drivers. In order to enable it, you need to add a few lines to your /etc/X11/xorg.conf file. Open it with sudo using your favorite text editor. Add in the block below. 
+
+Section "Device"
+    Identifier "AMDGPU"
+    Driver "amdgpu"
+    Option "AccelMethod" "glamor"
+    Option "DRI" "3"
+EndSection
